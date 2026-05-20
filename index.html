@@ -7,15 +7,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
-    --cream: #F7F3EE;
-    --warm-white: #FDFAF6;
-    --blush: #E8C4B0;
-    --dusty-rose: #C4897A;
-    --terracotta: #A0604A;
-    --charcoal: #2C2420;
-    --mid: #6B4E43;
-    --light-mid: #C4AFA8;
-    --gold: #C9A96E;
+    --cream: #F5F5F5;
+    --warm-white: #FFFFFF;
+    --blush: #CCCCCC;
+    --dusty-rose: #888888;
+    --terracotta: #111111;
+    --charcoal: #111111;
+    --mid: #555555;
+    --light-mid: #AAAAAA;
+    --gold: #999999;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -35,9 +35,9 @@
     position: fixed; top: 0; left: 0; right: 0; z-index: 100;
     display: flex; justify-content: space-between; align-items: center;
     padding: 1.4rem 3rem;
-    background: rgba(247,243,238,0.85);
+    background: rgba(255,255,255,0.9);
     backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(196,137,122,0.18);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
   }
   .nav-logo {
     font-family: 'Cormorant Garamond', serif;
@@ -104,7 +104,7 @@
 
   .hero-right {
     position: relative;
-    background: linear-gradient(145deg, #EDD8CB 0%, #C8957F 50%, #A0604A 100%);
+    background: linear-gradient(145deg, #444444 0%, #222222 50%, #000000 100%);
     display: flex; align-items: center; justify-content: center;
     overflow: visible;
   }
@@ -161,14 +161,14 @@
   .exp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1rem; }
   .exp-card {
     background: var(--cream);
-    border: 1px solid rgba(196,137,122,0.2);
+    border: 1px solid rgba(0,0,0,0.12);
     border-radius: 4px;
     padding: 2rem 2rem 2rem;
     position: relative; overflow: hidden;
     transition: box-shadow .3s, transform .3s;
   }
   .exp-card:hover {
-    box-shadow: 0 8px 32px rgba(160,96,74,0.12);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
     transform: translateY(-3px);
   }
   .exp-card::before {
@@ -196,7 +196,7 @@
   }
   .exp-card.highlight {
     grid-column: 1 / -1;
-    background: linear-gradient(135deg, #F0E5DC 0%, #E8D5C8 100%);
+    background: linear-gradient(135deg, #EFEFEF 0%, #E5E5E5 100%);
   }
   .exp-card.highlight .exp-bullets li { font-size: .88rem; }
 
@@ -215,7 +215,7 @@
     display: inline-block;
     margin: .25rem; padding: .4rem .9rem;
     background: rgba(255,255,255,0.07);
-    border: 1px solid rgba(196,137,122,0.25);
+    border: 1px solid rgba(0,0,0,0.15);
     border-radius: 100px;
     font-size: .78rem; color: var(--light-mid);
     transition: background .2s, color .2s;
@@ -237,7 +237,7 @@
   .awards-row { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: 1rem; }
   .award-card {
     flex: 1 1 260px;
-    border: 1px solid rgba(196,137,122,0.25);
+    border: 1px solid rgba(0,0,0,0.15);
     border-radius: 4px; padding: 1.8rem;
     position: relative;
     transition: border-color .3s;
@@ -253,7 +253,7 @@
 
   /* ── WHY ME ── */
   #why {
-    background: linear-gradient(135deg, var(--terracotta) 0%, #7A3D2F 100%);
+    background: linear-gradient(135deg, #222222 0%, #000000 100%);
     color: var(--warm-white);
     text-align: center;
   }
@@ -280,7 +280,7 @@
     background: var(--charcoal);
     padding: 3rem 6rem;
     display: flex; justify-content: space-between; align-items: center;
-    border-top: 1px solid rgba(196,137,122,0.15);
+    border-top: 1px solid rgba(0,0,0,0.1);
   }
   .footer-name {
     font-family: 'Cormorant Garamond', serif;
